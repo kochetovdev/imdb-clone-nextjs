@@ -17,6 +17,7 @@ const Searchbox = () => {
     if (!search) return;
 
     router.push(`/search/${search}`);
+    setSearch("");
   };
 
   return (
