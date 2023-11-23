@@ -11,7 +11,7 @@ interface Props {
 const NavbarItem = ({ title, param }: Props) => {
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
-  console.log(genre)
+
   return (
     <article>
       <Link
