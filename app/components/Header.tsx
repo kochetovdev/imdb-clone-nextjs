@@ -1,8 +1,8 @@
 import Link from "next/link";
-import MenuItem from "./MenuItem";
 import { IoIosHome } from "react-icons/io";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import DarkModeSwitch from "./DarkModeSwitch";
+import MenuItem from "./MenuItem";
 
 const Header = () => {
   return (

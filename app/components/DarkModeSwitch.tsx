@@ -7,8 +7,9 @@ import { MdLightMode } from "react-icons/md";
 
 const DarkModeSwitch = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
   const [mounted, setMounted] = useState(false);
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   useEffect(() => setMounted(true), []);
   return (
