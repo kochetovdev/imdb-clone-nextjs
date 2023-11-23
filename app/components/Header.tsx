@@ -2,6 +2,7 @@ import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { IoIosHome } from "react-icons/io";
 import { IoInformationCircleSharp } from "react-icons/io5";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 const Header = () => {
   return (
@@ -14,7 +15,8 @@ const Header = () => {
           Icon={IoInformationCircleSharp}
         />
       </div>
-      <div>
+      <div className="flex space-x-5 items-center">
+        <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl">
             <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">IMDB</span>
